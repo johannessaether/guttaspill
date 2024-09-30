@@ -64,7 +64,7 @@ window.onload = function () {
         ctx.fillRect(0, 0, boardwidth, boardheight)
         ctx.fillStyle = "pink"
         ctx.font = "27px sans-serif"
-        ctx.fillText("Trykk på Space for å starte", 20, 320)
+        ctx.fillText("Trykk for å starte", 80, 320)
     }
 }
 
@@ -173,8 +173,7 @@ function placePipes() {
 }
 
 
-function moveBird(e) {
-    if (e.code == "Space" || e.code == "ArrowUp") {
+function moveBird() {
         placementSpeed = (-5000 / velocityx) + (-2000 / velocityx)
         if (startaBird == false) {
             requestAnimationFrame(update)
@@ -195,7 +194,6 @@ function moveBird(e) {
             score = 0
             gameOver = false
         }
-    }
 }
 
 function detectCollision(a, b) {
