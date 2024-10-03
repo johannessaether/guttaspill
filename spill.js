@@ -59,7 +59,7 @@ window.onload = function () {
         bottomPipeImg = new Image()
         bottomPipeImg.src = "./media/pipe_bunn.png"
 
-        document.addEventListener("keydown", moveBird)
+        document.addEventListener("mousedown", moveBird)
         ctx.fillStyle = "rgba(0, 0, 0, 0.5)"
         ctx.fillRect(0, 0, boardwidth, boardheight)
         ctx.fillStyle = "pink"
